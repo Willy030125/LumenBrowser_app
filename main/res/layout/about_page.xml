@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:id="@+id/about_activity"
+    tools:context=".About">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/about_header"
+        android:background="@android:color/transparent"
+        android:padding="8dp"
+        >
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/back_btn_about"
+            android:src="@drawable/ic_arrow_back_black_24dp"
+            android:background="@android:color/transparent"
+            android:layout_marginEnd="15dp"/>
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/about_logo"
+            android:src="@drawable/ic_baseline_info_blue_24"
+            android:background="@android:color/transparent"
+            android:layout_marginEnd="5dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/about_title"
+            android:background="@android:color/transparent"
+            android:text="About"
+            android:textSize="25sp" />
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/changelog_btn"
+                android:text="View changelog"
+                android:gravity="center"
+                android:layout_alignParentEnd="true"/>
+        </RelativeLayout>
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/frame_about">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/about_relative"
+            android:background="@android:color/transparent">
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/about_image"
+                android:src="@mipmap/lumen_icon"
+                android:layout_marginTop="100dp"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/about1"
+                android:gravity="center"
+                android:text="Lumen Browser"
+                android:textSize="40dp"
+                android:layout_below="@id/about_image"
+                android:layout_marginTop="20dp"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/about2"
+                android:gravity="center"
+                android:text="v.1.7"
+                android:textSize="25dp"
+                android:layout_below="@id/about1"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/about3"
+                android:gravity="center"
+                android:text="Creative Team :"
+                android:textSize="30dp"
+                android:layout_marginTop="35dp"
+                android:layout_below="@id/about2"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/about_4"
+                android:gravity="center"
+                android:text="Willy Santoso (Programmer)"
+                android:textSize="17dp"
+                android:layout_marginTop="5dp"
+                android:layout_below="@id/about3"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/about_5"
+                android:gravity="center"
+                android:text="M. Destamal Junas (UI and UX Designer)"
+                android:textSize="17dp"
+                android:layout_below="@id/about_4"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/about_6"
+                android:gravity="center"
+                android:text="Asyifa Tasya F. (Analyst and Documentary)"
+                android:textSize="17dp"
+                android:layout_below="@id/about_5"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/about_7"
+                android:gravity="center"
+                android:text="Siti Nurliana (Analyst and Requirements)"
+                android:textSize="17dp"
+                android:layout_below="@id/about_6"/>
+        </RelativeLayout>
+    </ScrollView>
+
+</LinearLayout>

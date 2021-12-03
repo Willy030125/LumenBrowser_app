@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="20dp"
+    android:background="@drawable/rounded_box"
+    android:layout_marginBottom="15dp">
+    
+    <ImageView
+        android:id="@+id/tab_siteImage"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:padding="2dp"
+        android:src="@mipmap/globe_icon"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/display_siteInfo"
+        android:text="Display URL title here"
+        android:textSize="20dp"
+        android:textColor="@android:color/black"
+        android:layout_alignParentTop="true"
+        android:layout_toEndOf="@+id/tab_siteImage"
+        android:layout_marginLeft="20dp"
+        android:paddingBottom="5dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/display_siteUrl"
+        android:text="http://www.example.com/"
+        android:textSize="10dp"
+        android:textColor="@android:color/black"
+        android:layout_toEndOf="@id/tab_siteImage"
+        android:layout_marginLeft="20dp"
+        android:layout_below="@+id/display_siteInfo"/>
+
+</RelativeLayout>

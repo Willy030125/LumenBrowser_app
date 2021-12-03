@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#29ABE2</color>
+    <color name="colorPrimaryDark">#006A97</color>
+    <color name="colorAccent">#006A97</color>
+    <color name="bookmark">#ebeb00</color>
+</resources>

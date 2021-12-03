@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:checkableBehavior="single">
+        <item android:title="Bookmark"
+            android:id="@+id/nav_bookmark"
+            android:checkable="false"
+            android:icon="@drawable/ic_baseline_star_black_24" />
+
+        <item android:title="History"
+            android:id="@+id/nav_history"
+            android:checkable="false"
+            android:icon="@drawable/ic_baseline_history_black_24" />
+
+        <item android:title="Downloads"
+            android:id="@+id/nav_downloads"
+            android:checkable="false"
+            android:icon="@drawable/ic_baseline_cloud_download_black_24" />
+
+        <item android:title="About"
+            android:id="@+id/nav_about"
+            android:checkable="false"
+            android:icon="@drawable/ic_baseline_info_black_24" />
+
+    </group>
+
+</menu>
